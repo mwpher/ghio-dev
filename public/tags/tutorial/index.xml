@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Tutorial on  </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>https://mwpher.github.io/tags/tutorial/index.xml/</link>
+    
+    <author>Matthew Pherigo</author>
+    
+    <updated>Wed, 18 Feb 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>The Basics of FreeBSD&#39;s PF Firewall</title>
+      <link>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
+      <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
+      <author>Matthew Pherigo</author>
+      <guid>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;What is PF?&lt;/h2&gt;
+
+&lt;p&gt;PF, or &lt;em&gt;Packet Filter&lt;/em&gt;, is a dead-simple and blazingly fast firewall, first
+introduced in &lt;a href=&#34;http://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt; 3.0. Up until that time, OpenBSD had been using the
+popular IPFilter firewall, a great piece of software until the creator suddenly
+announced that &amp;ndash; surprise! &amp;ndash; the license terms didn&amp;rsquo;t allow its modification.
+The OpenBSD developers, being the beastly coding machines that they are,
+stripped out all traces of IPFilter and replaced it with a brand-new firewall:
+PF. This new firewall, as suddenly as it was developed, performed as well (or
+better) then IPFilter and iptables, and it quickly proliferated to the other
+BSDs, including FreeBSD, NetBSD, and DragonflyBSD.&lt;/p&gt;
+
+&lt;p&gt;Since maintaining a multi-platform kernel module is quite a task, each BSD&amp;rsquo;s
+version of PF is a little bit different from any other. These differences
+mainly lie in the version of PF was originally ported. FreeBSD&amp;rsquo;s version of PF
+was based on OpenBSD 4.5, and the syntax of the two platforms has diverged
+notably, so be sure to specify &lt;em&gt;FreeBSD&lt;/em&gt; in any search queries.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Two Minimal Config Files&lt;/h2&gt;
+
+&lt;p&gt;PF has an easy-to-read syntax similar to English grammar, stored in the
+configuration file &lt;code&gt;/etc/pf.conf&lt;/code&gt;. If it doesn&amp;rsquo;t exist yet, create it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo touch /etc/pf.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And insert this tiny config.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# pf.conf
+pass in
+pass out
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we&amp;rsquo;re going to load the PF service, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo kldload pf
+sudo sysrc pf_enable=YES
+sudo sysrc pflog_enable=YES
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;pre&amp;gt;&amp;lt;code class=&amp;quot;bash&amp;quot;&amp;gt;sudo touch /etc/pf.conf&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-c&#34;&gt;unsigned int flips;
+const char* errstr;
+unsigned int i;
+
+flips = (unsigned int)strtonum(argv[1], 1, UINT_MAX, &amp;amp;errstr);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;The Most &lt;em&gt;Secure&lt;/em&gt; pf.conf&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;block in
+block out
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;See Also&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.nostarch.com/pf3&#34;&gt;&lt;em&gt;The Book of PF&lt;/em&gt;, 3rd Edition&lt;/a&gt; by Peter N.M.
+Hansteen&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/doc/handbook/firewalls-pf.html&#34;&gt;PF - from the FreeBSD
+Handbook&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.freebsd.org/cgi/man.cgi?query=pf.conf&amp;amp;sektion=5&#34;&gt;pf.conf(5)&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

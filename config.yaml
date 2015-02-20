@@ -1,3 +1,4 @@
+baseurl: https://mwpher.github.io/
 params:
   Title: Matt's Notebook
   theme: theme-base-0d
@@ -16,7 +17,6 @@ indexes:
   category: "categories"
   tag: tags
 
-baseurl: https://mwpher.github.io/ghio-dev
 builddrafts: false
 canonifyurls: true
 MetaDataFormat: "yaml"

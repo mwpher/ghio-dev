@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>The Basics of FreeBSD&#39;s PF Firewall &middot; Matthew Pherigo</title>
+
+  
+  <link rel="stylesheet" href="https://mwpher.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://mwpher.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://mwpher.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://mwpher.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://mwpher.github.io/css/hyde-x.css">
+  <link rel="stylesheet" href="https://mwpher.github.io/css/highlight/github.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://mwpher.github.io/apple-touch-icon-144-precomposed.png">
+  <link href="https://mwpher.github.io/favicon.png" rel="icon">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title=" &middot; Matthew Pherigo" />
+
+  <meta name="description" content="This tutorial will teach you the basics of using FreeBSD&#39;s PF, starting with
+a simple one-computer ruleset and expanding until it becomes the firewall
+for a network.
+">
+  <meta name="keywords" content="">
+  
+</head>
+<body class="theme-base-0d">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>Matthew Pherigo</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://mwpher.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://github.com/mwpher">GitHub</a></li>
+      <li class="sidebar-nav-item"><a href="https://linkedin.com/in/mwpher">LinkedIn</a></li>
+      
+      <li class="sidebar-nav-item"><a href="https://facebook.com/mwpher">Facebook</a></li>
+      
+    </ul>
+
+    <p>Copyright &copy; 2015 <a href="https://mwpher.github.io/license">License</a><br/>
+       Powered by <a href="http://hugo.spf13.com">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+<div class="content container">
+  <div class="post">
+    <h1>The Basics of FreeBSD&#39;s PF Firewall</h1>
+    <span class="post-date">Feb 18, 2015 &middot; 2 minute read
+    
+    <br/>
+    
+    <a class="label" href="https://mwpher.github.io/categories/FreeBSD">FreeBSD</a><a class="label" href="https://mwpher.github.io/categories/Firewall">Firewall</a><a class="label" href="https://mwpher.github.io/categories/Tutorial">Tutorial</a><a class="label" href="https://mwpher.github.io/categories/PF">PF</a>
+    </span>
+    
+
+<p><strong>This tutorial assumes you&rsquo;re running FreeBSD 10 or 10.1.</strong></p>
+
+<h2 id="toc_0">What is PF?</h2>
+
+<p>PF, or <em>Packet Filter</em>, is a dead-simple and blazingly fast firewall, first
+introduced in <a href="http://www.openbsd.org/">OpenBSD</a> 3.0. Up until that time, OpenBSD had been using the
+popular IPFilter firewall, a great piece of software until the creator suddenly
+announced that &ndash; surprise! &ndash; the license terms didn&rsquo;t allow its modification.
+The OpenBSD developers, being the beastly coding machines that they are,
+stripped out all traces of IPFilter and replaced it with a brand-new firewall:
+PF. This new firewall, as suddenly as it was developed, performed as well (or
+better) then IPFilter and iptables, and it quickly proliferated to the other
+BSDs, including FreeBSD, NetBSD, and DragonflyBSD.</p>
+
+<p>Since maintaining a multi-platform kernel module is quite a task, each BSD&rsquo;s
+version of PF is a little bit different from any other. These differences
+mainly lie in the version of PF was originally ported. FreeBSD&rsquo;s version of PF
+was based on OpenBSD 4.5, and the syntax of the two platforms has diverged
+notably, so be sure to specify <em>FreeBSD</em> in any search queries.</p>
+
+<h2 id="toc_1">Two Minimal Config Files</h2>
+
+<p>PF has an easy-to-read syntax similar to English grammar, stored in the
+configuration file <code>/etc/pf.conf</code>. If it doesn&rsquo;t exist yet, create it:</p>
+
+<pre><code class="language-bash">sudo touch /etc/pf.conf
+</code></pre>
+
+<p>And insert this tiny config.</p>
+
+<pre><code># pf.conf
+pass in
+pass out
+</code></pre>
+
+<p>Now we&rsquo;re going to load the PF service, like so:</p>
+
+<pre><code class="language-bash">sudo kldload pf
+sudo sysrc pf_enable=YES
+sudo sysrc pflog_enable=YES
+</code></pre>
+
+<pre><code class="language-html">&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;sudo touch /etc/pf.conf&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+<pre><code class="language-c">unsigned int flips;
+const char* errstr;
+unsigned int i;
+
+flips = (unsigned int)strtonum(argv[1], 1, UINT_MAX, &amp;errstr);
+</code></pre>
+
+<h3 id="toc_2">The Most <em>Secure</em> pf.conf</h3>
+
+<pre><code>block in
+block out
+</code></pre>
+
+<h2 id="toc_3">See Also</h2>
+
+<p><a href="http://www.nostarch.com/pf3"><em>The Book of PF</em>, 3rd Edition</a> by Peter N.M.
+Hansteen</p>
+
+<p><a href="https://www.freebsd.org/doc/handbook/firewalls-pf.html">PF - from the FreeBSD
+Handbook</a></p>
+
+<p><a href="https://www.freebsd.org/cgi/man.cgi?query=pf.conf&amp;sektion=5">pf.conf(5)</a></p>
+
+  </div>
+  
+</div>
+
+
+
+
+<script src="https://mwpher.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
