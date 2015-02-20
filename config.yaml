@@ -1,0 +1,22 @@
+params:
+  Title: Matt's Notebook
+  theme: theme-base-0d
+  highlight: "github"
+  github: "https://github.com/mwpher"
+  linkedin: "https://linkedin.com/in/mwpher"
+  facebook: "https://facebook.com/mwpher"
+
+author:
+    name: Matthew Pherigo
+
+permalinks:
+  post: ':year/:month/:day/:title/'
+
+indexes:
+  category: "categories"
+  tag: tags
+
+baseurl: http://192.168.1.16:8080/~matt/hugo/
+builddrafts: false
+canonifyurls: true
+MetaDataFormat: "yaml"
