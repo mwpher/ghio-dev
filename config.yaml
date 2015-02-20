@@ -16,7 +16,7 @@ indexes:
   category: "categories"
   tag: tags
 
-baseurl: http://192.168.1.16:8080/~matt/hugo/
+baseurl: https://mwpher.github.io/ghio-dev
 builddrafts: false
 canonifyurls: true
 MetaDataFormat: "yaml"
