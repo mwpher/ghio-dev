@@ -13,9 +13,10 @@ author:
 permalinks:
   post: ':year/:month/:day/:title/'
 
-indexes:
+taxonomies:
   category: "categories"
-  tag: tags
+  tag: "tags"
+  series: "series"
 
 builddrafts: false
 canonifyurls: true
