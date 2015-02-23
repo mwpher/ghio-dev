@@ -3,7 +3,7 @@
   <channel>
       <title>Tutorial on  </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>https://mwpher.github.io/categories/tutorial/index.xml/</link>
+    <link>https://mwpher.github.io/ghio-dev/categories/tutorial/index.xml/</link>
     
     <author>Matthew Pherigo</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>The Basics of FreeBSD&#39;s PF Firewall</title>
-      <link>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
+      <link>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
       <author>Matthew Pherigo</author>
-      <guid>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
+      <guid>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;

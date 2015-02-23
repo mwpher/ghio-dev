@@ -1,4 +1,4 @@
-baseurl: https://mwpher.github.io/
+baseurl: https://mwpher.github.io/ghio-dev
 params:
   Title: Matt's Notebook
   theme: theme-base-0d

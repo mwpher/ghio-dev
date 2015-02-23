@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pf on </title>
-    <link>mwpher.github.io/ghio-dev/tags/pf/</link>
-    <description>Recent content in Pf on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="mwpher.github.io/ghio-dev/tags/pf/index.xml" rel="self" type="application/rss+xml" />
+      <title>Pf on  </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>https://mwpher.github.io/ghio-dev/tags/pf/index.xml/</link>
+    
+    <author>Matthew Pherigo</author>
+    
+    <updated>Wed, 18 Feb 2015 00:00:00 UTC</updated>
     
     <item>
       <title>The Basics of FreeBSD&#39;s PF Firewall</title>
-      <link>/mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</link>
-      <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</guid>
+      <link>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
+      <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
+      <author>Matthew Pherigo</author>
+      <guid>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;what-is-pf:e3f878ea2e399b876f39cda0d3744ad6&#34;&gt;What is PF?&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;What is PF?&lt;/h2&gt;
 
 &lt;p&gt;PF, or &lt;em&gt;Packet Filter&lt;/em&gt;, is a dead-simple and blazingly fast firewall, first
 introduced in &lt;a href=&#34;http://www.openbsd.org/&#34;&gt;OpenBSD&lt;/a&gt; 3.0. Up until that time, OpenBSD had been using the
@@ -36,7 +37,7 @@ mainly lie in the version of PF was originally ported. FreeBSD&amp;rsquo;s versi
 was based on OpenBSD 4.5, and the syntax of the two platforms has diverged
 notably, so be sure to specify &lt;em&gt;FreeBSD&lt;/em&gt; in any search queries.&lt;/p&gt;
 
-&lt;h2 id=&#34;two-minimal-config-files:e3f878ea2e399b876f39cda0d3744ad6&#34;&gt;Two Minimal Config Files&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Two Minimal Config Files&lt;/h2&gt;
 
 &lt;p&gt;PF has an easy-to-read syntax similar to English grammar, stored in the
 configuration file &lt;code&gt;/etc/pf.conf&lt;/code&gt;. If it doesn&amp;rsquo;t exist yet, create it:&lt;/p&gt;
@@ -68,13 +69,13 @@ unsigned int i;
 flips = (unsigned int)strtonum(argv[1], 1, UINT_MAX, &amp;amp;errstr);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;the-most-secure-pf-conf:e3f878ea2e399b876f39cda0d3744ad6&#34;&gt;The Most &lt;em&gt;Secure&lt;/em&gt; pf.conf&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;The Most &lt;em&gt;Secure&lt;/em&gt; pf.conf&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code&gt;block in
 block out
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;see-also:e3f878ea2e399b876f39cda0d3744ad6&#34;&gt;See Also&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;See Also&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.nostarch.com/pf3&#34;&gt;&lt;em&gt;The Book of PF&lt;/em&gt;, 3rd Edition&lt;/a&gt; by Peter N.M.
 Hansteen&lt;/p&gt;

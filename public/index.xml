@@ -3,7 +3,7 @@
   <channel>
       <title>Recent Content on  </title>
       <generator uri="https://hugo.spf13.com">Hugo</generator>
-    <link>https://mwpher.github.io/index.xml/</link>
+    <link>https://mwpher.github.io/ghio-dev/index.xml/</link>
     
     <author>Matthew Pherigo</author>
     
@@ -11,10 +11,10 @@
     
     <item>
       <title>The Basics of FreeBSD&#39;s PF Firewall</title>
-      <link>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
+      <link>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 UTC</pubDate>
       <author>Matthew Pherigo</author>
-      <guid>https://mwpher.github.io/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
+      <guid>https://mwpher.github.io/ghio-dev/2015/02/18/The-Basics-of-FreeBSDs-PF-Firewall/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;
@@ -88,14 +88,18 @@ Handbook&lt;/a&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Coming Soon!</title>
-      <link>https://mwpher.github.io/comingsoon/</link>
+      <title>Assorted Tips &amp; Tricks</title>
+      <link>https://mwpher.github.io/ghio-dev/assorted/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Matthew Pherigo</author>
-      <guid>https://mwpher.github.io/comingsoon/</guid>
+      <guid>https://mwpher.github.io/ghio-dev/assorted/</guid>
       <description>
 
-&lt;h1 id=&#34;toc_0&#34;&gt;Coming Soon!&lt;/h1&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;&lt;a href=&#34;/assorted/general&#34;&gt;General&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;&lt;a href=&#34;/assorted/freebsd&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;&lt;a href=&#34;/assorted/openbsd&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h3&gt;
 </description>
     </item>
     
