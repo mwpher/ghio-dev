@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Assorteds on </title>
-    <link>mwpher.github.io/ghio-dev/assorted/</link>
-    <description>Recent content in Assorteds on </description>
-    <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="mwpher.github.io/ghio-dev/assorted/index.xml" rel="self" type="application/rss+xml" />
+      <title>Assorteds on  </title>
+      <generator uri="https://hugo.spf13.com">Hugo</generator>
+    <link>https://mwpher.github.io/ghio-dev/assorted/index.xml/</link>
+    
+    <author>Matthew Pherigo</author>
+    
+    <updated>Tue, 01 Jan 2008 00:00:00 UTC</updated>
     
     <item>
       <title>Assorted Tips &amp; Tricks</title>
-      <link>/mwpher.github.io/ghio-dev/assorted/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/mwpher.github.io/ghio-dev/assorted/</guid>
+      <link>https://mwpher.github.io/ghio-dev/assorted/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Matthew Pherigo</author>
+      <guid>https://mwpher.github.io/ghio-dev/assorted/</guid>
       <description>
 
-&lt;h3 id=&#34;general-assorted-general:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;mwpher.github.io/ghio-dev/assorted/general&#34;&gt;General&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;&lt;a href=&#34;/assorted/general&#34;&gt;General&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&#34;freebsd-assorted-freebsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;mwpher.github.io/ghio-dev/assorted/freebsd&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;&lt;a href=&#34;/assorted/freebsd&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&#34;openbsd-assorted-openbsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;mwpher.github.io/ghio-dev/assorted/openbsd&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;&lt;a href=&#34;/assorted/openbsd&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h3&gt;
 </description>
     </item>
     
