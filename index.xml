@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://mwpher.github.io/ghio-dev/</link>
+    <link>https://mwpher.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 18 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://mwpher.github.io/ghio-dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mwpher.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Basics of FreeBSD&#39;s PF Firewall</title>
-      <link>https://mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</link>
+      <link>https://mwpher.github.io/2015/02/18/the-basics-of-freebsds-pf-firewall/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</guid>
+      <guid>https://mwpher.github.io/2015/02/18/the-basics-of-freebsds-pf-firewall/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;
@@ -88,17 +88,17 @@ Handbook&lt;/a&gt;&lt;/p&gt;
     
     <item>
       <title>Assorted Tips &amp; Tricks</title>
-      <link>https://mwpher.github.io/ghio-dev/assorted/</link>
+      <link>https://mwpher.github.io/assorted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mwpher.github.io/ghio-dev/assorted/</guid>
+      <guid>https://mwpher.github.io/assorted/</guid>
       <description>
 
-&lt;h3 id=&#34;general-assorted-general:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/ghio-dev/assorted/general&#34;&gt;General&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;general-assorted-general:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/assorted/general&#34;&gt;General&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&#34;freebsd-assorted-freebsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/ghio-dev/assorted/freebsd&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;freebsd-assorted-freebsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/assorted/freebsd&#34;&gt;FreeBSD&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id=&#34;openbsd-assorted-openbsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/ghio-dev/assorted/openbsd&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;openbsd-assorted-openbsd:d680e8a854a7cbad6d490c445cba2eba&#34;&gt;&lt;a href=&#34;https://mwpher.github.io/assorted/openbsd&#34;&gt;OpenBSD&lt;/a&gt;&lt;/h3&gt;
 </description>
     </item>
     
