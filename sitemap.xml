@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mwpher.github.io/</loc>
+    <loc>/mwpher.github.io/ghio-dev/</loc>
     <lastmod>2015-02-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mwpher.github.io/2015/02/18/the-basics-of-freebsds-pf-firewall/</loc>
+    <loc>/mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</loc>
     <lastmod>2015-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mwpher.github.io/assorted/</loc>
+    <loc>/mwpher.github.io/ghio-dev/assorted/</loc>
   </url>
   
 </urlset>
