@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Firewall on </title>
-    <link>mwpher.github.io/ghio-dev/categories/firewall/</link>
+    <link>https://mwpher.github.io/ghio-dev/categories/firewall/</link>
     <description>Recent content in Firewall on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 18 Feb 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="mwpher.github.io/ghio-dev/categories/firewall/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mwpher.github.io/ghio-dev/categories/firewall/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The Basics of FreeBSD&#39;s PF Firewall</title>
-      <link>/mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</link>
+      <link>https://mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</link>
       <pubDate>Wed, 18 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>/mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</guid>
+      <guid>https://mwpher.github.io/ghio-dev/2015/02/18/the-basics-of-freebsds-pf-firewall/</guid>
       <description>
 
 &lt;p&gt;&lt;strong&gt;This tutorial assumes you&amp;rsquo;re running FreeBSD 10 or 10.1.&lt;/strong&gt;&lt;/p&gt;
